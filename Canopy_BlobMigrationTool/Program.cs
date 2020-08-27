@@ -43,7 +43,7 @@ namespace Canopy_BlobMigrationTool
             var listBlobModel = canopyDAL.GetBlobList(res);
             var canopyBAL = new CanopyBAL(_iconfiguration);
             canopyBAL.UploadToS3(listBlobModel);
-            Console.WriteLine("Press any key to stop.");
+            Console.WriteLine("Press any key to stop running....");
             Console.ReadKey();
         }
     }
